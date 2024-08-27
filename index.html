@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body>
+    <header class="header">       
+        <img class="encriptador_logo" src="./assets/Logo.png" alt="Logo">
+    </header>
+    <main class="encriptador">
+        <section class="encriptador_contenido_left">
+            <div>
+                <textarea class="encriptador_text_message"  id="textMessage" name="textMessage" rows="10" onclick="clearText();"> ingrese el texto aqui         </textarea>
+            </div>
+            
+            <div class="encriptador_buttons_info">
+                <img src="./assets/note.png">
+                <p >Solo letras minúsculas y sin acentos </p>
+            </div>
+            <div class="encriptador_buttons">
+                   
+    
+                   
+                    <div class="encriptador_buttons_actions">
+                        <button class="encriptador_buttons_encriptar" href="https://github.com/" onclick="encriptar();">
+                            
+                        Encriptar
+                        </button>
+                        <button class="encriptador_buttons_desencriptar" href="https://linkedin.com/in/" onclick="desencriptar();">
+                            
+                            Desencriptar
+                        </button>
+                    </div>
+                    
+            </div>
+               
+        </section>
+        <section class="encriptador_contenido_right">
+            <div class="encriptador_text_message_result_container">
+                <textarea class="encriptador_text_message_result"  id="textMessageResult" name="textMessageResult" rows="10"  style="display:none;"> </textarea>
+            </div>
+            <div >
+                <img  id="encriptador_imagen" class="encriptador_imagen" src="./assets/person.png" alt="Ningún mensaje fue encontrado">
+                <p id="encriptador_contenido_titulo" class="encriptador_contenido_titulo"> Ningún mensaje fue encontrado</p>
+                <p id="encriptador_contenido_subtitulo" class="encriptador_contenido_subtitulo"> Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <button id="encriptador_buttons_copy" class="encriptador_buttons_copy" href="https://github.com/" onclick="copyMessage();" style="display:none;" >           
+                Copiar
+                </button>
+            </div>
+            
+        
+        </section>
+            
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Alberto Gómez 2024</p>
+    </footer>   
+    <script src="./js/app.js"></script>
+</body>
+</html>
